@@ -1,0 +1,270 @@
+﻿
+
+PS C:\Users\Han> cd -path "C:\Users\Han\Desktop\code"
+
+PS C:\Users\Han\Desktop\code> vue create my-shopping-cart
+
+
+Vue CLI v4.3.1
+? Please pick a preset: default (babel, eslint)
+
+
+Vue CLI v4.3.1
+✨  Creating project in C:\Users\Han\Desktop\code\my-shopping-cart.
+�  Initializing git repository...
+⚙️  Installing CLI plugins. This might take a while...
+
+
+> yorkie@2.0.0 install C:\Users\Han\Desktop\code\my-shopping-cart\node_modules\yorkie
+> node bin/install.js
+
+setting up Git hooks
+done
+
+
+> core-js@3.6.5 postinstall C:\Users\Han\Desktop\code\my-shopping-cart\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall C:\Users\Han\Desktop\code\my-shopping-cart\node_modules\ejs
+> node ./postinstall.js
+
+added 1216 packages from 844 contributors and audited 1219 packages in 67.028s
+
+43 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+�  Invoking generators...
+�  Installing additional dependencies...
+
+added 53 packages from 36 contributors and audited 1272 packages in 12.53s
+
+46 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+⚓  Running completion hooks...
+
+�  Generating README.md...
+
+�  Successfully created project my-shopping-cart.
+�  Get started with the following commands:
+
+ $ cd my-shopping-cart
+ $ npm run serve
+
+PS C:\Users\Han\Desktop\code>
+
+
+PS C:\Users\Han\Desktop\code> cd .\my-shopping-cart\
+
+
+PS C:\Users\Han\Desktop\code\my-shopping-cart> npm run serve
+
+> my-shopping-cart@0.1.0 serve C:\Users\Han\Desktop\code\my-shopping-cart
+> vue-cli-service serve
+
+ INFO  Starting development server...
+98% after emitting CopyPlugin
+
+ DONE  Compiled successfully in 5101ms                                                                                                                                                7:22:09
+
+
+  App running at:
+  - Local:   http://localhost:8081/
+  - Network: http://192.168.0.2:8081/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+要終止批次工作嗎 (Y/N)? y
+PS C:\Users\Han\Desktop\code\my-shopping-cart>
+
+
+
+
+
+npm install -D vuex 
+
+npm install -D vue-router
+
+
+
+
+
+
+Component template 只能有一個 root element
+
+
+
+Errors compiling template: Component template should contain exactly one root element
+
+
+
+
+
+
+ WAIT  Compiling...                                                                                                                                                                   9:37:28
+
+98% after emitting CopyPlugin
+
+ ERROR  Failed to compile with 2 errors                                                                                                                                               9:37:29
+
+ error  in ./src/views/ProductList.vue
+
+Module Error (from ./node_modules/eslint-loader/index.js):
+
+C:\Users\Han\Desktop\code\my-shopping-cart\src\views\ProductList.vue
+  7:3  error  The template root requires exactly one element  vue/valid-template-root
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+ @ ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js& 11:0-46 17:17-28
+ @ ./src/App.vue?vue&type=script&lang=js&
+ @ ./src/App.vue
+ @ ./src/main.js
+ @ multi (webpack)-dev-server/client?http://192.168.0.2:8081/sockjs-node (webpack)/hot/dev-server.js ./src/main.js
+
+ error  in ./src/views/ProductList.vue?vue&type=template&id=67a91b63&scoped=true&
+
+Module Error (from ./node_modules/vue-loader/lib/loaders/templateLoader.js):
+(Emitted value instead of an instance of Error)
+
+  Errors compiling template:
+
+  Component template should contain exactly one root element. If you are using v-if on multiple elements, use v-else-if to chain them instead.
+
+  4  |    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+  5  |  </div>
+  6  |  <!-- -->
+     |
+  7  |  <div class="container">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^
+  8  |    <div class="card-deck mb-3 text-center">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  9  |      <div class="card mb-4 shadow-sm">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 |        <div class="card-header">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |          <h4 class="my-0 font-weight-normal">Free</h4>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 |        </div>
+     |  ^^^^^^^^^^^^
+  13 |        <div class="card-body">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  14 |          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  15 |          <ul class="list-unstyled mt-3 mb-4">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 |            <li>10 users included</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  17 |            <li>2 GB of storage</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  18 |            <li>Email support</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  19 |            <li>Help center access</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  20 |          </ul>
+     |  ^^^^^^^^^^^^^
+  21 |          <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 |        </div>
+     |  ^^^^^^^^^^^^
+  23 |      </div>
+     |  ^^^^^^^^^^
+  24 |      <div class="card mb-4 shadow-sm">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  25 |        <div class="card-header">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 |          <h4 class="my-0 font-weight-normal">Pro</h4>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  27 |        </div>
+     |  ^^^^^^^^^^^^
+  28 |        <div class="card-body">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  29 |          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  30 |          <ul class="list-unstyled mt-3 mb-4">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 |            <li>20 users included</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |            <li>10 GB of storage</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  33 |            <li>Priority email support</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  34 |            <li>Help center access</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  35 |          </ul>
+     |  ^^^^^^^^^^^^^
+  36 |          <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  37 |        </div>
+     |  ^^^^^^^^^^^^
+  38 |      </div>
+     |  ^^^^^^^^^^
+  39 |      <div class="card mb-4 shadow-sm">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  40 |        <div class="card-header">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  41 |          <h4 class="my-0 font-weight-normal">Enterprise</h4>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  42 |        </div>
+     |  ^^^^^^^^^^^^
+  43 |        <div class="card-body">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  44 |          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  45 |          <ul class="list-unstyled mt-3 mb-4">
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  46 |            <li>30 users included</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  47 |            <li>15 GB of storage</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  48 |            <li>Phone and email support</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  49 |            <li>Help center access</li>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  50 |          </ul>
+     |  ^^^^^^^^^^^^^
+  51 |          <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  52 |        </div>
+     |  ^^^^^^^^^^^^
+  53 |      </div>
+     |  ^^^^^^^^^^
+  54 |    </div>
+     |  ^^^^^^^^
+  55 |  </div>
+     |  ^^^^^^
+  56 |
+     |
+
+
+
+
+PS C:\Users\Han\Desktop\code\my-shopping-cart> npm run serve
+
+> my-shopping-cart@0.1.0 serve C:\Users\Han\Desktop\code\my-shopping-cart
+> vue-cli-service serve
+
+ INFO  Starting development server...
+98% after emitting CopyPlugin
+
+ DONE  Compiled successfully in 4605ms                                                                          19:06:11
+
+
+  App running at:
+  - Local:   http://localhost:8081/
+  - Network: http://192.168.0.2:8081/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+
+
+
+
