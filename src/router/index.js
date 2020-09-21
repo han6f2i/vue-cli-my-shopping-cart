@@ -14,6 +14,7 @@ export default new VueRouter({
     {
       path: '/product/:brand',
       name: 'product.brand',
+      props: true,
       component: () => import("@/views/ProductList")
     }
   ]
